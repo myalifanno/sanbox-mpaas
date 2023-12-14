@@ -1,0 +1,12 @@
+<view>
+  <view class="demo-title">Basic usage</view>
+  <pagination total="{{20}}" current="{{1}}"/>
+  <view class="demo-title">Arrow button</view>
+  <pagination mode="icon" total="{{20}}" current="{{10}}"/>
+  <view class="demo-title">Basic mode</view>
+  <pagination simple total="{{20}}" current="{{1}}"/>
+  <view class="demo-title">Button disabled</view>
+  <pagination total="{{20}}" current="{{1}}" disabled/>
+  <view class="demo-title">Custom button text</view>
+  <pagination arrow prevText="Previous" nextText="Next" total="{{20}}" current="{{1}}"/>
+</view>

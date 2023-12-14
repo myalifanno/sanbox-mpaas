@@ -1,0 +1,46 @@
+.main-container {
+  background-color: #e3dcd8;
+}
+
+.container-button { 
+  padding: 12px;
+  border-radius: 50px;
+  color: #e3dcd8;
+  outline-color: #db630d;
+  background-color: #db630d;
+  border-color: #db630d;
+
+}
+
+.component-name {
+  color: rgb(51, 51, 51);
+  margin-right: 10rpx;
+}
+
+.component-name-logout {
+  color: rgb(237, 1, 1);
+  margin-right: 10rpx;
+}
+
+.thumb {
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 30rpx;
+}
+
+.component-outline {
+  border: 1px solid grey
+}
+
+.avatar {
+  margin: 8px;
+}
+
+.avatar-custom {
+  margin: 8px;
+}
+
+.avatar-custom image {
+  width: 40px;
+  height: 40px;
+}

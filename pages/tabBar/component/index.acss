@@ -1,0 +1,124 @@
+.page-set-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.page-set-wide {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container-round {
+  border-radius: 40px;
+  color: #000;
+  padding: 12px;
+  display: flex;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  background-color: #db630d;
+}
+
+.btn-success {
+  width: inherit;
+  border-radius: 20px;
+  background-color: #db630d;
+  color: #e3dcd8;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.btn-fail {
+  width: inherit;
+  border-radius: 20px;
+  background-color: red;
+  color: #e3dcd8;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.buttonwrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 20rpx;
+}
+
+.ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background-color: red !important;
+}
+
+.custome-step .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+  background-color: red !important;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  padding: 10rpx 20rpx;
+  background-color: #d21dc0b5;
+  color: #FFF;
+  font-size: 40rpx;
+  font-weight: 500;
+  border-radius: 40rpx;
+  margin: 5rpx;
+}
+
+.button-fail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  padding: 10rpx 20rpx;
+  background-color: #ff0404f7;
+  color: #FFF;
+  font-size: 40rpx;
+  font-weight: 500;
+  border-radius: 40rpx;
+  margin: 5rpx;
+}
+
+.button-hover {
+  background-color: khaki;
+}
+
+.button[disabled] {
+  background-color: #CCCCCC;
+  color: #888888;
+}
+
+.progress-bar {
+  position: relative;
+  height: 20rpx;
+  background-color: #e0e0e0;
+  border-radius: 10rpx;
+}
+
+.progress-label {
+  position: absolute;
+  top: 0;
+  right: 10rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #db630d;
+  font-size: 20rpx;
+}
+
+.progress {
+  height: 100%;
+  background-color: #db630d;
+  border-radius: 10rpx;
+}
+

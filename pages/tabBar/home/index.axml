@@ -1,0 +1,50 @@
+<popup 
+  visible="{{basicVisible}}"
+  height="{{500}}"
+  position="{{position}}"
+  animation="{{animation}}"
+  onClose="handleClose"
+  showMask="true"
+  className="popup-view"
+  maskClassName="popup-mask"
+>
+<view class="popup-loading" a:if="{{ isLoading }}">
+  <loading color="#1677ff" size="x-large" />
+  <loading color="#34B368" size="x-large" />
+  <loading color="#ff8f1f" size="x-large" />
+  <loading color="#ff0000" size="x-large" />
+</view>
+<view class="popup-img" a:else>
+  <view style="padding-bottom:10px">
+    {{pic.alt}}
+  </view>
+  <image mode="aspectFit" src="{{pic.src.original}}" onTap="previewOG" data-idx="0"/>
+  <view style="padding:10px;">
+    Taken by {{pic.photographer}} {{pic.id}}
+  </view>
+  <button size="mini" type="warn" class="popup-button" onTap="webVisit" data-url="{{pic.photographer_url}}">
+    Photographer's Collection
+  </button>
+  <container class="popup-container">
+    <view style="display:flex; flex-direction:row; justify-content:center; align-items:center; flex-wrap:wrap">
+      <avatar size="{{item}}" src="{{pic.src.original}}" a:for="{{ sizes }}" class="avatar" />
+    </view>
+  </container>
+  <button class="popup-button" type="warn" onTap="download">
+    Download
+  </button>
+</view>
+</popup>
+<view class="grid-container">
+  <block a:for="{{photos}}" a:for-item="item" a:for-index="index">
+    <view class="grid-item {{index % 2 === 0 ? 'even' : 'odd'}}">
+      <view class="image-container">
+        <image class="grid-image" src="{{item.src.portrait}}" mode="aspectFit" onTap="handleShow" data-position="top" data-id={{item.id}}></image>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="scroll-to-top-button" a:if="{{scrollTop}}" onTap="scrollToTop">
+  <image class="scroll-to-top-icon" src="/images/eject.png" ></image>
+</view>

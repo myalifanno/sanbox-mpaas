@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "Details",
+  "usingComponents": {
+    "loading": "antd-mini/es/Loading/index",
+    "container": "antd-mini/es/Container/index"
+  },
+  "backgroundColor": "#38302a"
+  
+}

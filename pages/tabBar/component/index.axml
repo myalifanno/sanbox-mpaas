@@ -1,0 +1,66 @@
+<view class="page-set-mid">
+  <container class="container-round" title="Standard Button">
+    <view onTap="handleButton">
+      <btn>
+        Positive
+      </btn>
+    </view>
+    <view class="button-fail" hover-class="button-hover" onTap="handleButtonDecrement" >
+      Negative
+    </view>
+  </container>
+</view>
+
+
+<view class="page-set-wide">
+  <divider 
+      text="DIVISION" 
+      textStyle="color:#db630d; fontWeight:600" 
+      lineHeight="2"
+      lineType="dashed"
+      lineColor="#db630d" 
+    />
+  <!-- <container title="Progress">
+    <progress percent="{{progress1}}" />
+    <view class="buttonwrapper">
+      <button size="small" inline  style="margin-right:16rpx" onTap="handleDelete">Previous</button>
+      <button size="small" inline  onTap="handleAdd">Next</button>
+    </view>
+  </container> -->
+  <container title="Steps Progression">
+    <steps
+      items="{{items}}"
+      current="{{current}}"
+      className="custome-step"
+    />
+    <button onTap="onNextTap" type="warn" class="btn-success">
+      <view a:if="{{current < items.length - 1}}">Next</view>
+      <view a:else>End</view>
+    </button>
+    <button a:if="{{current > 0}}" type="warn" onTap="onPrevTap" class="btn-fail">Go Back</button>
+  </container>
+
+  <container>
+    <text style="padding-bottom: 20px">Progress Bar</text>
+    <view class="progress-bar">
+      <view class="progress" style="width: {{progress}}%"></view>
+      <view class="progress-label">{{progress}}%</view>
+    </view>
+    <view class="button" hover-class="button-hover" onTap="handleNext">
+      Positive
+    </view>
+    <view class="button-fail" hover-class="button-hover" onTap="handlePrevious" >
+      Negative
+    </view>
+  </container>
+</view>
+<text-fn>
+  <view>
+    hello
+  </view>
+</text-fn>
+<!-- <view >
+</view> -->
+<btn onTap="handleButton">
+  hellooo
+</btn>

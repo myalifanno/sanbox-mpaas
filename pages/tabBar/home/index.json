@@ -1,0 +1,17 @@
+{
+  "usingComponents": {
+    "container": "mini-ali-ui/es/container/index",
+    "title": "mini-ali-ui/es/title/index",
+    "flex": "mini-antui/es/flex/index",
+    "flex-item": "mini-antui/es/flex/flex-item/index",
+    "popup" : "antd-mini/es/Popup/index",
+    "button" : "antd-mini/es/Button/index",
+    "switch" : "antd-mini/es/Switch/index",
+    "search-bar" : "mini-ali-ui/es/search-bar/index",
+    "list-item" : "antd-mini/es/List/ListItem/index",
+    "avatar" : "antd-mini/es/Avatar/index",
+    "loading": "antd-mini/es/Loading/index"
+  },
+  "defaultTitle": "Picksles",
+  "titleBarColor": "#38302a"
+  }

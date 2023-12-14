@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "pagination": "mini-antui/es/pagination/index"
+  }
+}

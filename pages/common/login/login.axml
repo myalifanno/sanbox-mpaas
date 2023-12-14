@@ -1,0 +1,6 @@
+<view class="container">
+  <image mode="aspectFit" src="/images/picture.png" />
+  <input type="text" class="input" placeholder="Email" onInput="handleUsernameInput" />
+  <input type="password" class="input" placeholder="Password" onInput="handlePasswordInput" />
+  <button class="button" onTap="handleLogin">Login</button>
+</view>

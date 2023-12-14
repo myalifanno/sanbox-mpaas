@@ -1,0 +1,66 @@
+<container class="main-container">
+  <list-item
+    imagesSize= "large"
+    brief="{{user.email}}"
+  >
+  {{user.username}}
+    <avatar
+      slot="image"
+      name="User's Name"
+      desc="testing"
+      src="{{profilePic}}"
+    />
+  </list-item>
+  <button size="default" type="warn" class="container-button">Edit Profile</button>
+</container>
+<container>
+  <!-- this will be block loop -->
+  <container class="component-outline">
+    <list-item arrow="right" multipleLine="{{false}}" onTap="handleTap" data-event='favourites'>
+      <view style="display:flex; align-align-items: center;">
+        <image mode="aspectFit" src="/images/favourite.png" class="thumb" />
+        <text class="component-name">Favourites</text>
+      </view>
+    </list-item>
+    <list-item arrow="right" multipleLine="{{false}}" onTap="handleTap" data-event='downloads'>
+      <view style="display:flex; align-align-items: center;">
+        <image mode="aspectFit" src="/images/download.png" class="thumb" />
+        <text class="component-name">Downloads</text>
+      </view>
+    </list-item>
+  </container>
+  <container class="component-outline">
+    <list-item arrow="right" multipleLine="{{false}}" onTap="handleTap" data-event='language'>
+      <view style="display:flex; align-align-items: center;">
+        <image mode="aspectFit" src="/images/language.png" class="thumb" />
+        <text class="component-name">Language</text>
+      </view>
+    </list-item>
+    <list-item arrow="right" multipleLine="{{false}}" onTap="handleTap" data-event='location'>
+      <view style="display:flex; align-align-items: center;">
+        <image mode="aspectFit" src="/images/location.png" class="thumb" />
+        <text class="component-name">Location</text>
+      </view>
+    </list-item>
+    <list-item arrow="right" multipleLine="{{false}}" onTap="handleTap" data-event='setting'>
+      <view style="display:flex; align-align-items: center;">
+        <image mode="aspectFit" src="/images/settings.png" class="thumb" />
+        <text class="component-name">Setting</text>
+      </view>
+    </list-item>
+  </container>
+  <container class="component-outline">
+    <list-item arrow="right" multipleLine="{{false}}" onTap="handleTap" data-event='clearHistory'>
+      <view style="display:flex; align-align-items: center;">
+        <image mode="aspectFit" src="/images/trash.png" class="thumb" />
+        <text class="component-name">Clear History</text>
+      </view>
+    </list-item>
+    <list-item arrow="right" multipleLine="{{false}}" onTap="handleLogout" data-event='logout'>
+      <view style="display:flex; align-align-items: center;">
+        <image mode="aspectFit" src="/images/logout.png" class="thumb" />
+        <text class="component-name-logout">Log Out</text>
+      </view>
+    </list-item>
+  </container>
+</container>

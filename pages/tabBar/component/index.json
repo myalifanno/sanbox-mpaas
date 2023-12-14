@@ -1,0 +1,16 @@
+{
+  "usingComponents": {
+    "button": "antd-mini/es/Button/index",
+    "container": "antd-mini/es/Container/index",
+    "divider": "antd-mini/es/Divider/index",
+    "progress": "antd-mini/es/Progress/index",
+    "icon": "antd-mini/es/Icon/index",
+    "steps": "antd-mini/es/Steps/index",
+    "text-fn" : "/pages/component/text-fn/text-fn",
+    "btn" : "/pages/component/btn/btn"
+  },
+  "backgroundColor": "#e3dcd8",
+  "pullRefresh": false,
+  "defaultTitle": "Components",
+  "titleBarColor": "#e3dcd8"
+}

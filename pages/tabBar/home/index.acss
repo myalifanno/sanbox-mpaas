@@ -1,0 +1,147 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #38302a;
+  /* position: relative;
+  z-index: 1; */
+}
+
+.grid-item {
+  background-color: #38302a;
+  width: 50%;
+  height: 315px;
+  margin-bottom: 2px;
+  border-radius: 30px;
+  /* position: relative;
+  z-index: 1; */
+}
+
+/* .grid-item.even .image-container {
+
+} */
+
+.image-container {
+  position: relative;
+  justify-content: center;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+/* .grid-item.even .grid-image {
+
+} */
+
+.grid-image {
+  width: 100%;
+  height: 315px;
+}
+
+.item-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 2;
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.2);
+  /* transition: opacity 0.5s; */
+}
+
+.scroll-to-top-button.show {
+  opacity: 1;
+}
+
+.scroll-to-top-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.popup-view {
+  border-radius: 50px;
+  background-color: #db630d;
+  height: 620px;
+  transition: ease-in-out;
+  transition-timing-function: ease-in-out;
+  animation: ease-in-out;
+}
+
+.popup-mask {
+  height: 100vh;
+}
+
+.box.top, .box.bottom {
+  height: 200px;
+}
+
+.box.left, .box.right {
+  width: 200px;
+  height: 100%;
+}
+
+.box {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #e3dcd8;
+  border-radius: 50px;
+  height: 540px;
+}
+
+.avatar {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3dcd8;
+}
+
+.popup-container {
+  background-color: #e3dcd8;
+}
+
+.popup-button {
+  padding: 12px;
+  border-radius: 50px;
+  color: #e3dcd8;
+  outline-color: #db630d;
+  background-color: #db630d;
+  border-color: #db630d;
+}
+
+.popup-loading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #e3dcd8;
+  border-radius: 50px;
+  height: 540px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "blank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@antv/my-f2": "^2.1.7",
+    "antd-mini": "^1.9.2",
+    "jsrsasign": "^10.8.6",
+    "mini-ali-ui": "^1.4.1",
+    "mini-antui": "^0.5.2"
+  }
+}

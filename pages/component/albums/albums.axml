@@ -1,0 +1,24 @@
+<view>
+  <view a:if="{{ album === null }}" style="display: flex; justify-content: center; align-items: center; margin-top: 350px">
+    <loading color="#db630d" size="x-large" />
+    <loading color="#db630d" size="x-large" />
+    <loading color="#db630d" size="x-large" />
+    <loading color="#db630d" size="x-large" />
+  </view>
+
+  <view a:else>
+    <view style="display:flex; justify-content:center; align-items:center; margin-bottom:20px;">
+      <image mode="scaleToFill" src="/images/web.png" style="width:50rpx; height:50rpx;" />
+      <text style="color:antiquewhite">Taken by {{album.photographer}}</text>
+      <image mode="scaleToFill" src="/images/web.png" style="width:50rpx; height:50rpx;" />
+    </view>
+    <view style="display:flex; justify-content:center; flex-direction:column; align-items:center">
+      <image mode="aspectFit" src="{{album.src.original}}" />
+      <image mode="aspectFit" src="{{album.src.tiny}}" />
+      <image mode="aspectFit" src="{{album.src.large2x}}" />
+      <image mode="aspectFit" src="{{album.src.landscape}}" />
+      <image mode="aspectFit" src="{{album.src.portrait}}" />
+    </view>
+    
+  </view>
+</view>

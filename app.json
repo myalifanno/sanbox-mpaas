@@ -1,0 +1,91 @@
+{
+  "pages": [
+    "pages/common/login/login",
+    "pages/tabBar/home/index",
+    "pages/tabBar/product/index",
+    "pages/tabBar/component/index",
+    "pages/tabBar/profile/index"
+  ],
+  "subPackages":[
+    {
+      "root" : "pages/component",
+      "pages" : [
+        "details/details",
+        "albums/albums"
+      ]
+    },
+    {
+      "root": "pages/common",
+      "pages": [
+        "login/login",
+        "webview/webview",
+        "news/news",
+        "visit/visit",
+        "pagination/pagination",
+        "graph/graph"
+      ]
+    }
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  },
+  "tabBar": {
+    "textColor": "#e3dcd8", 
+    "selectedColor": "#db630d",
+    "backgroundColor": "#38302a",
+    "items": [
+      {
+        "pagePath": "pages/tabBar/home/index",
+        "name": "Home",
+        "icon": "images/homeWHT.png",
+        "activeIcon": "images/homeORG.png"
+      },
+      {
+        "pagePath": "pages/tabBar/product/index",
+        "name": "Products",
+        "icon": "images/menuWHT.png",
+        "activeIcon": "images/menuORG.png"
+      },
+      {
+        "pagePath": "pages/tabBar/component/index",
+        "name": "Component",
+        "icon": "images/componentsWHT.png",
+        "activeIcon": "images/componentsORG.png"
+      },
+      {
+        "pagePath": "pages/tabBar/profile/index",
+        "name" : "Profile",
+        "icon" : "images/userWHT.png",
+        "activeIcon" : "images/userOG.png"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/tabBar/home/index": {
+      "network": "all",
+      "packages": [
+
+      ]
+    },
+    "pages/tabBar/product/index": {
+      "network": "all",
+      "packages": [
+        
+      ]
+    }
+  },
+  "permission": {
+    "scope.album": {
+      "desc": "Permission to access camera"
+    },
+    "scope.camera": {
+      "desc": "Accesing Camera for QR scan"
+    },
+    "scope.userLocation": {
+      "desc": "Your location is needed"
+    },
+    "scope.writePhotosAlbum": {
+      "desc": "Accesing gallery to save photo album"
+    }
+  }
+}

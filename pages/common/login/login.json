@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "container": "antd-mini/es/Container/index"
+  },
+  "defaultTitle": "Picksles",
+  "titleBarColor": "#38302a",
+  "backgroundColor": "#38302a"
+}

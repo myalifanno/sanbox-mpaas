@@ -1,0 +1,10 @@
+<view>
+  <view a:if="{{ getUrl === null }}" style="display: flex; justify-content: center; align-items: center;">
+    <loading color="#1677ff" size="x-large" />
+    <loading color="#34B368" size="x-large" />
+    <loading color="#ff8f1f" size="x-large" />
+    <loading color="#ff0000" size="x-large" />
+    <text>please wait</text>
+  </view>
+  <web-view src="{{ getUrl.url }}" />
+</view>

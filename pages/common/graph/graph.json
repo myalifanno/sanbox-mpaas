@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "k",
+  "usingComponents": {
+    "k": "../../component/k/index"
+  }
+}

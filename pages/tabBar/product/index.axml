@@ -1,0 +1,48 @@
+<view class="page">
+  <view class="page-description">OUR NEW RELEASE</view>
+  <view class="page-section">
+      <view class="page-section-demo">
+          <swiper
+                  style="height:150px; margin-bottom:20px"
+                  class="demo-swiper"
+                  previousMargin="10px"
+                  nextMargin="10px"
+                  indicator-dots="{{indicatorDots}}"
+                  autoplay="{{autoplay}}"
+                  vertical="{{vertical}}"
+                  interval="{{interval}}"
+                  circular="{{circular}}"
+          >
+              <swiper-item key="swiper-item-{{index}}" a:for="{{thumbnail}}">
+                  <view class="swiper-item bc_{{item}}">
+                    <image mode="aspectFill" src="{{item.thumbnail}}" style="width:100%; height:100%;" />
+                  </view>
+              </swiper-item>
+          </swiper>
+          <br>
+          <grid onGridItemClick="onItemClick" columnNum="{{5}}" list="{{list55}}" infinite="{{true}}" gridName="newGridName" circular="{{true}}" />
+    <view class="page-description" style="margin-top: 20px">OUR PRODUCTS</view>
+    <view class="card-grid">
+      <block a:for="{{ products }}" a:for-index="index" a:for-item="item">
+        <card thumb="{{thumb}}" 
+          subTitle="{{ item.title }}  \n $.{{ item.price}}" 
+          class="card-title"
+          onCardClick="onCardClick" 
+          onActionClick="onActionClick" 
+          onExtraActionClick="onExtraActionClick" 
+          info="{{ item.id }}" 
+          expand="{{ item.id === expandedID }}" 
+          bgImg="{{ item.thumbnail }}"
+          data-index="{{ index }}" 
+        />
+          <view a:if="{{ item.id == expandedID }}">
+            {{item.description}} 
+            <view>
+              <button size="default" onTap="navigateDetails" data-id="{{ item.id }}" data-url="/pages/component/details/details" type="ghost" loading>Details</button>
+            </view>
+          </view>
+      </block>
+    </view>
+  </view>
+  <button size="default" type="primary" onTap="scrollToTop">Scroll To Top</button>
+</view>

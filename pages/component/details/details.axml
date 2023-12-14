@@ -1,0 +1,33 @@
+<view style="background-color:#38302a">
+  <view a:if="{{ item === null }}" style="display: flex; justify-content: center; align-items: center; margin-top: 350px;">
+    <loading color="#1677ff" size="x-large" />
+    <loading color="#34B368" size="x-large" />
+    <loading color="#ff8f1f" size="x-large" />
+    <loading color="#ff0000" size="x-large" />
+  </view>
+  <view a:else>
+    <swiper
+            style="height:150px; margin-bottom:20px"
+            class="demo-swiper"
+            previousMargin="10px"
+            nextMargin="10px"
+            indicator-dots="{{true}}"
+            autoplay="{{true}}"
+            vertical="{{false}}"
+            interval="2000"
+            circular="{{true}}"
+    >
+        <swiper-item key="swiper-item-{{index}}" a:for="{{item.images}}">
+            <view class="swiper-item bc_{{item}}">
+              <image mode="aspectFill" src="{{item}}" style="width:100%; height:100%;" />
+            </view>
+        </swiper-item>
+    </swiper>
+    <container class="container">
+      <view>
+        {{item.title}}
+        {{item.description}}
+      </view>
+    </container>
+  </view>
+</view>
